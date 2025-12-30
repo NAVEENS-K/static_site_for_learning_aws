@@ -1,7 +1,7 @@
-document.getElementById("cta-btn").addEventListener("click", () => {
-    document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
-});
+document.getElementById("resume-btn").addEventListener("click", (e) => {
+    e.preventDefault();
 
-document.getElementById("resume-btn").addEventListener("click", () => {
-    alert("Resume will be downloaded from S3 (Coming Soon)");
+    const resumeUrl = "https://naveens-resume-bucket.s3.ap-south-1.amazonaws.com/resume.pdf";
+
+    window.open(resumeUrl, "_blank");
 });
