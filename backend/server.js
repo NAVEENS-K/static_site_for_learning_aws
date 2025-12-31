@@ -13,7 +13,7 @@ app.get("/resume", async (req, res) => {
       Bucket: "s3-for-my-resume",
       Key: "NAVEENS_K[1].pdf",
       Expires: 60 // seconds
-      ResponseContentDisposition: 'attachment; filename="Naveens_Resume.pdf"',
+      ResponseContentDisposition: 'attachment; filename="NAVEENS_K[1].pdf"',
       ResponseContentType: "application/pdf"
     };
 
