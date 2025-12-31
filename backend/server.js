@@ -13,6 +13,8 @@ app.get("/resume", async (req, res) => {
       Bucket: "s3-for-my-resume",
       Key: "NAVEENS_K[1].pdf",
       Expires: 60 // seconds
+      ResponseContentDisposition: 'attachment; filename="Naveens_Resume.pdf"',
+      ResponseContentType: "application/pdf"
     };
 
     const signedUrl = s3.getSignedUrl("getObject", params);
