@@ -10,7 +10,7 @@ const s3 = new AWS.S3({ region: "ap-south-1" });
 app.get("/resume", async (req, res) => {
   try {
     const params = {
-      Bucket: "naveens_s3_bucket_for_resume_download",
+      Bucket: "naveens-s3-bucket-for-resume-download",
       Key: "resume.pdf",
       Expires: 60, // seconds
       ResponseContentDisposition: 'attachment; filename="resume.pdf"',
